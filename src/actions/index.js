@@ -3,8 +3,8 @@ const menuLoaded = (newMenu) => {
   return {
     type: 'MENU_LOADED',
     payload: newMenu
-  };
-};
+  }
+}
 
 const menuRequested = () => {
   return {
@@ -20,15 +20,15 @@ const menuError = () => {
 
 const addedToCart = (id) => {
   return {
-    type: 'ITEM_ADDED_TO_CART',
-    payloaded: id
+    type: 'ITEM_ADD_TO_CART',
+    payload: id
   }
 }
 
 const deleteFromCart = (id) => {
   return {
     type: 'ITEM_REMOVE_FROM_CART',
-    payloaded: id
+    payload: id
   }
 }
 
